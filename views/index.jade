@@ -1,0 +1,17 @@
+doctype html
+html(ng-app="fasmApp")
+  head
+    title #{title} - FASM
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    header
+      h1 FASM
+    .container
+      .main-content
+        input(type="text").searchbox(ng-controller="SearchController")
+    footer
+      p By Dan and Will Long
+    script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js")
+    script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-route.js")
+    script(type="text/javascript" src="js/controllers.js")
+    script(type="text/javascript" src="js/app.js")
