@@ -19,6 +19,8 @@
   ],
   "keywords": [],
   "devDependencies": {
+    "express": "4.x",
+    "jade": "*",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-nodeunit": "^0.3.3",
     "grunt-contrib-watch": "^0.6.1",
