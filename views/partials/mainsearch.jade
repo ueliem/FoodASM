@@ -4,7 +4,10 @@
     table
       tr
       td
-        a(href="/oauth") Hello, guest, would you like to login?
+        #user
+          a(href="/oauth") login with Evernote?
+          br
+          a(href="/clear") logout?
         br
         input(type="text" placeholder="Enter an ingredient..." ng-model="cur_search").searchbox
         br

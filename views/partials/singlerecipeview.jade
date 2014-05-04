@@ -13,6 +13,4 @@
             input(type="checkbox" name="checklist" id="{{ingredient.name}}")
             {{ingredient.description}}
         br
-        input(type="submit" value="Export to shopping list" id="GoShopping" ng-click="get_recipes_by_ingredients(cur_search)")
-        img(src="imgs/Elephant.gif" id="Elephant")
-        br
+        a(ng-click="export_evernote()" href="") Export
