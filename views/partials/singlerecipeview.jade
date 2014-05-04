@@ -4,18 +4,15 @@
     table
       tr
       td
-        | {{current_recipe.summary.title}}
+        p.bold {{current_recipe.summary.title}}
         ul
           li(ng-repeat="direction in current_recipe.directions") {{direction}}
-        br
-        | Which ingredients do you need?
+        p.bold Which ingredients do you need?
         ul
           li(ng-repeat="ingredient in current_recipe.ingredients")
             input(type="checkbox" name="checklist" id="{{ingredient.name}}")
             {{ingredient.description}}
         br
-        br
         input(type="submit" value="Export to shopping list" id="GoShopping" ng-click="get_recipes_by_ingredients(cur_search)")
         img(src="imgs/Elephant.gif" id="Elephant")
-        br
         br

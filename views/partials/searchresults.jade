@@ -4,7 +4,7 @@
     table
       tr
       td
-        | There are {{recipe_count}} results for {{previous_query}}:
+        p.bold {{recipe_count}} result(s) for {{previous_query}}:
         ul
           li(ng-repeat="result in recipes")
             a(href="" ng-click="get_single_recipe(result.summary.id)") {{result.summary.title}}
