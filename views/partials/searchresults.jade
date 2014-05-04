@@ -6,4 +6,5 @@
       td
         | There are {{recipe_count}} results for {{previous_query}}:
         ul
-          li(ng-repeat="result in recipes") {{result.summary.title}} has {{result.summary.id}}.
+          li(ng-repeat="result in recipes") {{result.summary.title}}
+            a(href="#") {{result.summary.id}} 
