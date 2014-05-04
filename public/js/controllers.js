@@ -21,10 +21,28 @@ fasmControllers.controller('SearchController', ['$scope', '$http', '$location', 
     }
 ]);
 
-fasmControllers.controller('SearchResultsController', ['$scope', '$http', 'searchResultsService',
-    function($scope, $http, searchResultsService) {
+fasmControllers.controller('SearchResultsController', ['$scope', '$http', 'searchResultsService', 'singleRecipeService',
+    function($scope, $http, searchResultsService, singleRecipeService) {
         $scope.previous_query = searchResultsService.previous_query;
         $scope.recipe_count = searchResultsService.numrecipes;
         $scope.recipes = searchResultsService.recipes;
+        $scope.get_single_recipe = function(id) {
+            var requrl = "https://api.pearson.com/v2/foodanddrink/recipes/" + id;
+            $http.get(requrl)
+            .success(function(data) {
+                //console.log("Something not as bad happened.");
+                var recipes = data.results;
+                singleRecipeService.put_recipe(recipe);
+                $location.url("/recipe");
+            }).error(function(data) {
+                console.log("Something horrible happened.");
+            });
+        }
+    }
+]);
+
+fasmControllers.controller('SingleRecipeController', ['$scope', '$http', 'singleRecipeService',
+    function($scope, $http, singleRecipeService) {
+        $scope.current_recipe = singleRecipeService.get_recipe();
     }
 ]);

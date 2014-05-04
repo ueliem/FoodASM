@@ -12,3 +12,14 @@ fasmServices.service('searchResultsService', function() {
         return this.recipes;
     }
 });
+
+fasmServices.service('singleRecipeService', function() {
+
+    var recipe = [];
+    this.put_recipe = function(recipe) {
+        this.recipe = recipe;
+    }
+    this.get_recipe = function() {
+        return this.recipe;
+    }
+});
