@@ -10,4 +10,6 @@
         br
         | Which ingredients do you need?
         ul
-          li(ng-repeat="ingredient in current_recipe.ingredients") {{ingredient.description}}
+          li(ng-repeat="ingredient in current_recipe.ingredients")
+            input(type="checkbox" name="checklist" id="{{ingredient.name}}")
+            {{ingredient.description}}
