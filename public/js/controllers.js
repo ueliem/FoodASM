@@ -12,6 +12,7 @@ fasmControllers.controller('SearchController', ['$scope', '$http', '$location', 
                 var recipes = data.results;
                 searchResultsService.put_recipes(recipes);
                 searchResultsService.numrecipes = numrecipes;
+                searchResultsService.previous_query = cur_search;
                 $location.url("/searchresults");
             }).error(function(data) {
                 console.log("Something horrible happened.");
@@ -22,6 +23,7 @@ fasmControllers.controller('SearchController', ['$scope', '$http', '$location', 
 
 fasmControllers.controller('SearchResultsController', ['$scope', '$http', 'searchResultsService',
     function($scope, $http, searchResultsService) {
+        $scope.previous_query = searchResultsService.previous_query;
         $scope.recipe_count = searchResultsService.numrecipes;
         $scope.recipes = searchResultsService.recipes;
     }

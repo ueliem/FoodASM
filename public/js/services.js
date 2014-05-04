@@ -4,7 +4,7 @@ fasmServices.service('searchResultsService', function() {
 
     var recipes = [];
     var numrecipes = 0;
-
+    var previous_query = "";
     this.put_recipes = function(recipes) {
         this.recipes = recipes;
     }
