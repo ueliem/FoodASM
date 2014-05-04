@@ -1,0 +1,11 @@
+.main-content
+  br
+  form
+    table
+      tr
+      td
+| There are {{recipe_count}} results for "Ingredient":
+        ul
+          li(ng-repeat="result in recipes") {{result.summary.title}} has {{result.summary.id}}.
+  br
+  br
