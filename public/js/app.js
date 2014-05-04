@@ -11,6 +11,10 @@ fasmApp.config(['$routeProvider',
         templateUrl: 'partials/mainsearch',
         controller: 'SearchController'
       }).
+      when('/searchresults', {
+        templateUrl: 'partials/searchresults',
+        controller: 'SearchResultsController'
+      }).
       otherwise({
         redirectTo: '/'
       });

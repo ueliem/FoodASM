@@ -5,6 +5,10 @@ fasmServices.service('searchResultsService', function() {
     var recipes = [];
     var numrecipes = 0;
 
-    this.get_recipes_by_ingredients = function(ingredientname) {
-    };
+    this.put_recipes = function(recipes) {
+        this.recipes = recipes;
+    }
+    this.get_recipes = function() {
+        return this.recipes;
+    }
 });
