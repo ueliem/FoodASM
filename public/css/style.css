@@ -1,23 +1,39 @@
 body {
-    background-color: #FFEEEE;
+    background-color: #04B404;
 }
 
 header {
   text-align: center;
+  font-family:"Arial", Arial, sans-serif;
+  font-size:32px;
 }
+
 p.test {
-   text-align: center
- }
+   text-align: center;
+   background: white;
+   margin: 12px 12px 12px 12px;
+   padding: 3px 3px 3px 3px;
+   border-radius: 15px;
+   width: 200px;
+}
 
 form {
-    width: 200px;
+    background: white;
+    width: 500px;
     margin: 0 auto;
+    border-radius: 15px;
 }
 
 .searchbox {
-
+    width: 440px;
+    margin: 12px 12px 12px 12px;
+    padding: 3px 3px 3px 3px;
+    font-family:"Arial", Arial, sans-serif;
+    font-size:20px;
 }
 
 footer {
-text-align: center
+  text-align: center;
+  font-family:"Arial", Arial, sans-serif;
+  font-size:16px;
 }
