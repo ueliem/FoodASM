@@ -2,6 +2,22 @@ body {
     background-color: #FFEEEE;
 }
 
+header {
+  text-align: center;
+}
+p.test {
+   text-align: center
+ }
+
+form {
+    width: 200px;
+    margin: 0 auto;
+}
+
 .searchbox {
-    
+
+}
+
+footer {
+text-align: center
 }

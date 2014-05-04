@@ -8,17 +8,24 @@ html(ng-app="fasmApp")
       h1 FASM
     .container
       .main-content
-        select
-          option plan a meal...
-          option breakfast
-          option brunch
-          option lunch
-          option dinner
-        br
-        br
-        input(type="text" placeholder="Enter an ingredient...").searchbox(ng-controller="SearchController")
-    footer
-      p By Dan and Will Long
+        form
+          table
+            tr
+            td
+              select
+                option plan a meal...
+                option breakfast
+                option brunch
+                option lunch
+                option dinner
+              br
+              br
+              input(type="text" placeholder="Enter an ingredient...").searchbox(ng-controller="SearchController")
+              br
+              br
+        footer
+          br
+          | By Dan and Will Long
     script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js")
     script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-route.js")
     script(type="text/javascript" src="js/controllers.js")
