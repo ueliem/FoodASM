@@ -7,10 +7,12 @@
         p.bold {{current_recipe.summary.title}}
         ul
           li(ng-repeat="direction in current_recipe.directions") {{direction}}
-        p.bold Which ingredients do you need?
+        p.bold List of Ingredients
         ul
           li(ng-repeat="ingredient in current_recipe.ingredients")
             input(type="checkbox" name="checklist" id="{{ingredient.name}}")
             {{ingredient.description}}
         br
-        a(ng-click="export_evernote()" href="") Export
+        a(ng-click="export_evernote()" href="http://sandbox.evernote.com/") Export shopping list to Evernote
+        img(src="imgs/Elephant.gif" id="Elephant")
+        br

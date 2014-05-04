@@ -52,11 +52,11 @@ fasmControllers.controller('SingleRecipeController', ['$scope', '$http', '$locat
             }
         };*/
         $scope.export_evernote = function() {
-            console.log("TESTMESSAGE");
+            //console.log("TESTMESSAGE");
             var requrl = "/export";
             $http.post(requrl, $scope.current_recipe.ingredients)
             .success(function(data) {
-                console.log("Something not as bad happened.");
+                //console.log("Something not as bad happened.");
                 $location.url("/");
             }).error(function(data, status, headers, config) {
                 console.log("Something horrible happened.");
