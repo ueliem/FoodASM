@@ -7,7 +7,7 @@ html(ng-app="fasmApp")
     header
       h1 FASM
     .container
-      .main-content
+      .main-content(ng-controller="SearchController")
         br
         form
           table
@@ -20,10 +20,10 @@ html(ng-app="fasmApp")
                 option lunch
                 option dinner
               br
-              input(type="text" placeholder="Enter an ingredient...").searchbox(ng-controller="SearchController")
+              input(type="text" placeholder="Enter an ingredient..." ng-model="cur_search").searchbox
               br
               br
-              input(type="submit")
+              input(type="submit" ng-click="get_recipes_by_ingredients(cur_search)")
               br
               br
           footer
