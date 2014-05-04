@@ -12,6 +12,6 @@ fasmServices.service('searchResultsService', function() {
             recipes = data.results;
         }).error(function(data) {
             console.log("Something horrible happened.");
-        })
+        });
     };
 });
