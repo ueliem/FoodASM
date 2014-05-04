@@ -8,8 +8,8 @@ fasmApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/', {
-        templateUrl: '',
-        controller: ''
+        templateUrl: 'partials/mainsearch',
+        controller: 'SearchController'
       }).
       otherwise({
         redirectTo: '/'

@@ -11,4 +11,9 @@ app.get('/', function(req, res){
   );
 });
 
+app.get('/partials/:name', function(req, res){
+  var name = req.params.name;
+  res.render('partials/' + name);
+});
+
 app.listen(3000);
