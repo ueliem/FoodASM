@@ -1,9 +1,10 @@
-var phonecatApp = angular.module('fasmApp', [
+var fasmApp = angular.module('fasmApp', [
   'ngRoute',
   'fasmControllers',
+  'fasmServices',
 ]);
 
-phonecatApp.config(['$routeProvider',
+fasmApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/', {
