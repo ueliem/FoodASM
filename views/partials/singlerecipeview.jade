@@ -1,0 +1,18 @@
+.main-content
+  br
+  form
+    table
+      tr
+      td
+        {{result.summary.title}}
+        {{result.images}}
+          ul
+            li(ng-repeat="result in images")
+        {{result.directions}}
+          ul
+            li(ng-repeat="result in directions")
+        br
+        | Which ingredients do you need?
+        {{result.ingredients}}
+          ul
+            li(ng-repeat="result in ingredients")
