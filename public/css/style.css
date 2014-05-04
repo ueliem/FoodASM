@@ -1,5 +1,6 @@
-body {
-    background-color: #5CB85C;
+ body {
+  background-image:url('/imgs/noodles5.jpg');
+  //background-color:#5CB85C;
 }
 
 header {
@@ -28,6 +29,7 @@ header {
   -moz-user-select: none;
   margin-left:25px;
 }
+
 p.bold {
    font-weight:bold;
    font-family:"Arial", Arial, sans-serif;
@@ -101,7 +103,9 @@ form {
 }
 
 footer {
+  font-weight:bold;
+  color: #000000;
   text-align: center;
   font-family:"Arial", Arial, sans-serif;
-  font-size:16px;
+  font-size:20px;
 }
