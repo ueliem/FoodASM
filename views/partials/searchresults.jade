@@ -7,4 +7,4 @@
         | There are {{recipe_count}} results for {{previous_query}}:
         ul
           li(ng-repeat="result in recipes") {{result.summary.title}}
-            a(href="#") {{result.summary.id}} 
+            a(href="" ng-click="get_single_recipe(result.summary.id)") {{result.summary.id}}

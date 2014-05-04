@@ -4,15 +4,10 @@
     table
       tr
       td
-        {{result.summary.title}}
-        {{result.images}}
-          ul
-            li(ng-repeat="result in images")
-        {{result.directions}}
-          ul
-            li(ng-repeat="result in directions")
+        | {{current_recipe.summary.title}}
+        ul
+          li(ng-repeat="direction in current_recipe.directions") {{direction}}
         br
         | Which ingredients do you need?
-        {{result.ingredients}}
-          ul
-            li(ng-repeat="result in ingredients")
+        ul
+          li(ng-repeat="ingredient in current_recipe.ingredients") {{ingredient.description}}

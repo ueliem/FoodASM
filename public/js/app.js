@@ -15,6 +15,10 @@ fasmApp.config(['$routeProvider',
         templateUrl: 'partials/searchresults',
         controller: 'SearchResultsController'
       }).
+      when('/recipe', {
+        templateUrl: 'partials/singlerecipeview',
+        controller: 'SingleRecipeController'
+      }).
       otherwise({
         redirectTo: '/'
       });

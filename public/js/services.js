@@ -15,7 +15,7 @@ fasmServices.service('searchResultsService', function() {
 
 fasmServices.service('singleRecipeService', function() {
 
-    var recipe = [];
+    var recipe = {};
     this.put_recipe = function(recipe) {
         this.recipe = recipe;
     }
